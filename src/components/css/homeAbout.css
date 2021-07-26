@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:wght@300;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #202020;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.homeAbout-container {
+  width: 100%;
+  height: calc(50vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeAbout-container .homeAbout-content {
+  margin: 1rem;
+}
+.homeAbout-container .homeAbout-content .under-line {
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  height: 15px;
+  background-color: #f0c808;
+}
+.homeAbout-container .homeAbout-content p {
+  max-width: 600px;
+}
+.homeAbout-container .homeAbout-content h2 {
+  padding-left: 15%;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1635px) {
+  .homeAbout-container {
+    flex-direction: column-reverse;
+  }
+  .homeAbout-container .homeAbout-content p {
+    max-width: 400px;
+    margin-top: 2rem;
+  }
+  .homeAbout-container .right-img {
+    width: 350px;
+    margin-bottom: 5rem;
+  }
+}
+/*# sourceMappingURL=homeAbout.css.map */

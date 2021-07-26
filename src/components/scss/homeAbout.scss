@@ -1,0 +1,40 @@
+@import "./global-settings.scss";
+.homeAbout-container {
+  width: 100%;
+  height: calc(50vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .homeAbout-content {
+    margin: 1rem;
+    .under-line {
+      display: flex;
+      align-items: flex-end;
+      width: 100px;
+      height: 15px;
+      background-color: $yellow;
+    }
+    p {
+      max-width: 600px;
+    }
+    h2 {
+      padding-left: 15%;
+      font-weight: $bold;
+    }
+  }
+}
+@media screen and (max-width: 1635px) {
+  .homeAbout-container {
+    flex-direction: column-reverse;
+    .homeAbout-content {
+      p {
+        max-width: 400px;
+        margin-top: 2rem;
+      }
+    }
+    .right-img {
+      width: 350px;
+      margin-bottom: 5rem;
+    }
+  }
+}

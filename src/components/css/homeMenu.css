@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:wght@300;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #202020;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.homeMenu-container {
+  width: 100%;
+  height: calc(150vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homeMenu-container .card {
+  background-color: white;
+  width: 1600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeMenu-container .card .left-img {
+  width: 475px;
+}
+.homeMenu-container .card .card-content a,
+.homeMenu-container .card p,
+.homeMenu-container .card h2 {
+  color: black;
+}
+.homeMenu-container .card .card-content {
+  margin: 1rem 2rem;
+}
+.homeMenu-container .card .card-content .under-line {
+  display: flex;
+  align-items: flex-end;
+  width: 175px;
+  height: 15px;
+  background-color: #f0c808;
+}
+.homeMenu-container .card .card-content h2 {
+  padding-left: 5%;
+  font-weight: 600;
+}
+.homeMenu-container .card .card-content p {
+  margin-top: 1rem;
+}
+.homeMenu-container .card .card-content .btn .text-btn {
+  display: flex;
+  align-self: center;
+  padding: 1rem 0rem;
+}
+.homeMenu-container .card .card-content .btn .text-btn img {
+  margin: 0 1rem;
+  transition: 0.2s ease-in-out;
+}
+.homeMenu-container .card .card-content .btn:hover img {
+  transform: translateX(10px);
+}
+
+@media screen and (max-width: 1635px) {
+  .homeMenu-container .card {
+    width: 475px;
+    height: 1000px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0rem 1rem;
+  }
+  .homeMenu-container .card .left-img {
+    width: 100%;
+    bottom: 2rem;
+  }
+  .homeMenu-container .card .card-content p {
+    font-size: 0.8rem;
+  }
+}
+/*# sourceMappingURL=homeMenu.css.map */

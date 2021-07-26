@@ -1,0 +1,59 @@
+@import "./global-settings.scss";
+.home-container {
+  width: 100%;
+  height: calc(110vh - 80px);
+  background-image: url(../../imgs-optimized/hero-img.png);
+  background-size: cover;
+  background-position: center center;
+}
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+  margin: 1rem;
+  h1 {
+    font-family: $gugi;
+    font-size: 5rem;
+    margin-top: 1rem;
+  }
+  p {
+    max-width: 500px;
+    font-size: 1rem;
+  }
+  .btns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btns a {
+    padding: 0.75rem 1.25rem;
+    color: black;
+    transition: 0.1s ease-in-out;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+  .about-btn {
+    background-color: white;
+  }
+  .menu-btn {
+    background-color: $yellow;
+  }
+  .menu-btn:hover {
+    background-color: $yellowHover;
+  }
+}
+@media screen and (max-width: 300px) {
+  .home-content {
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+    .menu-btn,
+    .about-btn {
+      padding: 0.25rem 0.75rem;
+      font-size: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Gugi&family=Poppins:wght@300;400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #202020;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-container {
+  width: 100%;
+  height: calc(110vh - 80px);
+  background-image: url(../../imgs-optimized/hero-img.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+  margin: 1rem;
+}
+.home-content h1 {
+  font-family: "Gugi", cursive;
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+.home-content p {
+  max-width: 500px;
+  font-size: 1rem;
+}
+.home-content .btns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-content .btns a {
+  padding: 0.75rem 1.25rem;
+  color: black;
+  transition: 0.1s ease-in-out;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.home-content .about-btn {
+  background-color: white;
+}
+.home-content .menu-btn {
+  background-color: #f0c808;
+}
+.home-content .menu-btn:hover {
+  background-color: #987e00;
+}
+
+@media screen and (max-width: 300px) {
+  .home-content h1 {
+    font-size: 2rem;
+  }
+  .home-content p {
+    font-size: 0.75rem;
+  }
+  .home-content .menu-btn,
+.home-content .about-btn {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.5rem;
+  }
+}
+/*# sourceMappingURL=homeHero.css.map */
